@@ -1,4 +1,4 @@
-# Intra-class Correlation Coefficient (ICC Regularizer) Project Page
+# (In construction) Intra-class Correlation Coefficient (ICC Regularizer) Project Page
 
 Project page for the NeurIPS 2023 paper - J. Zhang, S. Jayasuriya, V. Berisha, "Learning Repeatable Speech Embeddings Using An Intra-class Correlation Regularizer."
 
