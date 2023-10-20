@@ -110,24 +110,6 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -136,7 +118,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            A good supervised embedding for a specific machine learning task is only sensitive to changes in the label of interest and is invariant to other confounding factors. We leverage the concept of repeatability from measurement theory to describe this property and propose to use the intra-class correlation coefficient (ICC) to evaluate the repeatability of embeddings. We propose a novel regularizer, the ICC regularizer, as a complementary component for contrastive loss to further regularize deep neural networks to produce embeddings with higher repeatability. We use simulated data to explain why the ICC regularizer works better on minimizing the intra-class variance than the contrastive loss alone. We implement the ICC regularizer and apply it to three speech tasks: speaker verification, voice style conversion, and a clinical application for detecting dysphonic voice. The experimental results demonstrate that adding an ICC regularizer can improve the repeatability of learned embeddings compared to using contrastive loss solely; further, these embeddings lead to improved performance in these downstream tasks.
           </p>
         </div>
       </div>
@@ -153,30 +135,37 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/carousel1.jpg" alt="Formulation for ICC regularizer"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Formulation for ICC regularizer.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/carousel2.jpg" alt="ICC vs. GE2E"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          The contour figures for (a) GE2E loss and (b) ICC regularizer value of intra- and inter-class variance. To explore the gradient trend of GE2E loss and ICC regularizer, some starting points (red dots) are selected, then the maximum gradient descent path (red dashed lines) of value is calculated and plotted. (c) The contour figure for SVM classification error rate on simulation data per intra- and inter-class variance.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/carousel3.jpg" alt="TI-SV results"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         Experimental results for TI-SV task.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/carousel4.jpg" alt="Zero-shot VC results"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Experimental results for zero-shot voice style conversion task.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/carousel5.jpg" alt="Dysphonic voice detection results"/>
+      <h2 class="subtitle has-text-centered">
+        Experimental results of voice feature embeddings for dysphonic voice detection task.
       </h2>
     </div>
   </div>
