@@ -43,6 +43,15 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <style>
+    table, td, th {
+      border: 1px solid black;
+    }
+    table, th {
+      text-align: center;
+      vertical-align: center;
+    }
+</style>
 </head>
 <body>
 
@@ -174,6 +183,52 @@
 </section>
 <!-- End image carousel -->
 
+<section class="hero is-small">
+  <h2 class="subtitle has-text-centered">Zero-shot voice conversion task examples. The following table shows conversions to unseen speakers.</h2>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+  <div class="table-wrapper">
+    <table>
+      <tr>
+        <th><font color= #58c3c2>Sample No.</font></th>
+        <th><font color= #58c3c2>Source Speaker</font></th>
+        <th><font color= #58c3c2>Target Speaker</font></th>
+        <th><font color= #58c3c2>GE2E only</font></th>
+        <th><font color= #58c3c2>GE2E + ICC</font></th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td><audio controls=""><source src="static/audios/01/source_utterance.wav" /><embed height="50" src="static/audios/01/source_utterance.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/01/target_speaker_sample.wav" /><embed height="50" src="static/audios/01/target_speaker_sample.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/01/GE2E_only.wav" /><embed height="50" src="static/audios/01/GE2E_only.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/01/ICC+GE2E.wav" /><embed height="50" src="static/audios/01/ICC+GE2E.wav" width="100"></embed></audio></td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td><audio controls=""><source src="static/audios/02/source_utterance.wav" /><embed height="50" src="static/audios/02/source_utterance.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/02/target_speaker_sample.wav" /><embed height="50" src="static/audios/02/target_speaker_sample.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/02/GE2E_only.wav" /><embed height="50" src="static/audios/02/GE2E_only.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/02/ICC+GE2E.wav" /><embed height="50" src="static/audios/02/ICC+GE2E.wav" width="100"></embed></audio></td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td><audio controls=""><source src="static/audios/03/source_utterance.wav" /><embed height="50" src="static/audios/03/source_utterance.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/03/target_speaker_sample.wav" /><embed height="50" src="static/audios/03/target_speaker_sample.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/03/GE2E_only.wav" /><embed height="50" src="static/audios/03/GE2E_only.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/03/ICC+GE2E.wav" /><embed height="50" src="static/audios/03/ICC+GE2E.wav" width="100"></embed></audio></td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td><audio controls=""><source src="static/audios/04/source_utterance.wav" /><embed height="50" src="static/audios/04/source_utterance.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/04/target_speaker_sample.wav" /><embed height="50" src="static/audios/04/target_speaker_sample.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/04/GE2E_only.wav" /><embed height="50" src="static/audios/04/GE2E_only.wav" width="100"></embed></audio></td>
+        <td><audio controls=""><source src="static/audios/04/ICC+GE2E.wav" /><embed height="50" src="static/audios/04/ICC+GE2E.wav" width="100"></embed></audio></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+</section>
 
 
 
